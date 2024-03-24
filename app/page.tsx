@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   other: {
     'fc:frame': 'vNext',
-    'fc:frame:image': 'https://imgur.com/a/LLOgeKS', // Update with your image URL
+    'fc:frame:image': 'https://imgs.search.brave.com/R9CdhY8TWCMOQOU_FclRjsxOktvKfrBD7oH-VwIxADc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTU5/MjQyMDI0L3Bob3Rv/L3RoZS1kcm9uZS1p/bi1zdW5zZXQtc2t5/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1scmd0NVA3RDBt/ZVNUWDh0M1NweTRn/SmhrM0ZGZmpBMTR1/UnRBV1FhczNNPQ', // Update with your image URL
   },
 };
 
