@@ -18,7 +18,8 @@ export const metadata: Metadata = {
     description: 'A frame telling the story of Cosmic Cowboys',
   },
   other: {
-    data: stringifiedData,
+    'fc:frame': 'vNext',
+    'fc:frame:image': 'https://imgs.search.brave.com/ViN_IrOw632L-pBgOdg66JBTSBD0jQheRf75qebcjbo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9yZWQtc3BvcnQt/Y2FyLXdhbGxwYXBl/cl83OTY1ODAtMTc1/Ny5qcGc_c2l6ZT02/MjYmZXh0PWpwZw', // Update with your image URL
   },
 };
 
