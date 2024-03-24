@@ -12,11 +12,11 @@ const data = [
 const stringifiedData = JSON.stringify(data);
 
 export const metadata: Metadata = {
-  title: 'Cosmic Cowboys',
-  description: 'A frame telling the story of Cosmic Cowboys',
+  title: 'SkyFrames',
+  description: 'A frame telling the story of SkyFrames',
   openGraph: {
-    title: 'Cosmic Cowboys',
-    description: 'A frame telling the story of Cosmic Cowboys',
+    title: 'SkyFrames',
+    description: 'A frame telling the story of SkyFrames',
   },
   other: {
     'fc:frame': 'vNext',
