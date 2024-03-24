@@ -1,15 +1,14 @@
-import { getFrameMetadata } from '@coinbase/onchainkit';
 import type { Metadata } from 'next';
 
-const frameMetadata = getFrameMetadata({
-  buttons: [
-    {
-      label: "Begin"
-    }
-  ],
-  image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/Qme4FXhoxHHfyzTfRxSpASbMF8kajLEPkRQWhwWu9pkUjm/0.png`,
-  post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frame?id=1`,
-});
+const data = [
+  { height: 80, status: 'Airborne', distance: 5043762.5 },
+  { height: 80, status: 'Airborne', distance: 5043501 },
+  { height: 80, status: 'Airborne', distance: 0 },
+  { height: 80, status: 'Airborne', distance: 5043777 },
+  { height: 80, status: 'Airborne', distance: 0 }
+];
+
+const stringifiedData = JSON.stringify(data);
 
 export const metadata: Metadata = {
   title: 'Cosmic Cowboys',
@@ -17,10 +16,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Cosmic Cowboys',
     description: 'A frame telling the story of Cosmic Cowboys',
-    images: [`${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/Qme4FXhoxHHfyzTfRxSpASbMF8kajLEPkRQWhwWu9pkUjm/0.png`],
   },
   other: {
-    ...frameMetadata,
+    data: stringifiedData,
   },
 };
 
@@ -28,6 +26,25 @@ export default function Page() {
   return (
     <>
       <h1>Cosmic Cowboys</h1>
+      <div>
+        {data.map(() => (
+          <p>
+            Height: 80, Status: Airborne, Distance: 5043762.5
+          </p>
+        ))}
+        <p>
+            Height: 80, Status: Airborne, Distance: 5043501
+          </p>
+          <p>
+            Height: 80, Status: Airborne, Distance: 0
+          </p>
+          <p>
+            Height: 80, Status: Airborne, Distance: 5043777
+          </p>
+          <p>
+            Height: 80, Status: Airborne, Distance: 0
+          </p>
+      </div>
     </>
   );
 }
